@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget - Financial App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/budget.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=League+Spartan:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <div class="main-bg">
+            <!-- Header Section -->
+            <div class="welcome-text">
+                <h1>Budget</h1>
+            </div>
+
+            <!-- Balance Card -->
+            <div class="balance-card">
+                <div class="balance-info">
+                    <div class="balance-section">
+                        <div class="balance-row">
+                            <div class="balance-icon">
+                                <img src="img/Income.png" alt="Wallet" width="24" height="24">
+                            </div>
+                            <div class="balance-label">Total Balance</div>
+                        </div>
+                        <div class="balance-amount amount">$7,783.00</div>
+                    </div>
+                    <div class="balance-divider"></div>
+                    <div class="balance-section">
+                        <div class="balance-row">
+                            <div class="balance-icon">
+                                <img src="img/expense.png" alt="Expense" width="24" height="24">
+                            </div>
+                            <div class="balance-label">Total Expense</div>
+                        </div>
+                        <div class="balance-amount expense">-$1,187.40</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+                <div class="progress-percentage">30%</div>
+                <div class="progress-amount">$20,000.00</div>
+            </div>
+            
+            <div class="progress-text">
+                <div class="progress-checkbox">
+                    <img src="img/check.png" alt="Check" width="16" height="16">
+                </div>
+                <div class="description">30% of your expenses, looks good.</div>
+            </div>
+
+            <!-- White Frame -->
+            <div class="white-frame">
+                <!-- Time Selector -->
+                <div class="time-selector">
+                    <div class="selector-option active">Daily</div>
+                    <div class="selector-option">Weekly</div>
+                    <div class="selector-option">Monthly</div>
+                    <div class="selector-option">Year</div>
+                </div>
+
+                <!-- Chart Area -->
+                <div class="chart-container">
+                    <div class="chart-area">
+                        <!-- Chart title inside yellow card -->
+                        <div class="chart-title">Income & Expenses</div>
+                        
+                        <!-- Y-axis labels -->
+                        <div class="y-axis-labels">
+                            <div class="y-label">15k</div>
+                            <div class="y-label">10k</div>
+                            <div class="y-label">5k</div>
+                            <div class="y-label">1k</div>
+                        </div>
+                        
+                        <!-- Chart content -->
+                        <div class="chart-content">
+                            <!-- Grid lines -->
+                            <div class="grid-lines">
+                                <div class="grid-line"></div>
+                                <div class="grid-line"></div>
+                                <div class="grid-line"></div>
+                                <div class="grid-line"></div>
+                            </div>
+                            
+                            <!-- Chart bars with two bars per day -->
+                            <div class="chart-bars">
+                                <!-- Monday -->
+                                <div class="day-bars">
+                                    <div class="bar-fill income" style="height: 56px;"></div>
+                                    <div class="bar-fill expense" style="height: 85px;"></div>
+                                </div>
+                                <!-- Tuesday -->
+                                <div class="day-bars">
+                                    <div class="bar-fill income" style="height: 17px;"></div>
+                                    <div class="bar-fill expense" style="height: 47px;"></div>
+                                </div>
+                                <!-- Wednesday -->
+                                <div class="day-bars">
+                                    <div class="bar-fill income" style="height: 83px;"></div>
+                                    <div class="bar-fill expense" style="height: 50px;"></div>
+                                </div>
+                                <!-- Thursday -->
+                                <div class="day-bars">
+                                    <div class="bar-fill income" style="height: 10px;"></div>
+                                    <div class="bar-fill expense" style="height: 63px;"></div>
+                                </div>
+                                <!-- Friday -->
+                                <div class="day-bars">
+                                    <div class="bar-fill income" style="height: 101px;"></div>
+                                    <div class="bar-fill expense" style="height: 92px;"></div>
+                                </div>
+                                <!-- Saturday -->
+                                <div class="day-bars">
+                                    <div class="bar-fill income" style="height: 30px;"></div>
+                                    <div class="bar-fill expense" style="height: 8px;"></div>
+                                </div>
+                                <!-- Sunday -->
+                                <div class="day-bars">
+                                    <div class="bar-fill income" style="height: 32px;"></div>
+                                    <div class="bar-fill expense" style="height: 73px;"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Baseline -->
+                            <div class="baseline"></div>
+                            
+                            <!-- Chart labels -->
+                            <div class="chart-labels">
+                                <div class="chart-label">Mon</div>
+                                <div class="chart-label">Tue</div>
+                                <div class="chart-label">Wed</div>
+                                <div class="chart-label">Thu</div>
+                                <div class="chart-label">Fri</div>
+                                <div class="chart-label">Sat</div>
+                                <div class="chart-label">Sun</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Income & Expense Summary -->
+                <div class="summary-cards">
+                    <div class="income-card">
+                        <div class="income-icon">
+                            <img src="img/Bincome.png" alt="Income" width="25" height="25">
+                        </div>
+                        <div class="income-content">
+                            <div class="income-label">Income</div>
+                            <div class="income-amount">$4,120.00</div>
+                        </div>
+                    </div>
+                    <div class="expense-card">
+                        <div class="expense-icon">
+                            <img src="img/Expense.png" alt="Expense" width="25" height="25">
+                        </div>
+                        <div class="expense-content">
+                            <div class="expense-label">Expense</div>
+                            <div class="expense-amount">$1,187.40</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Navigation -->
+            <div class="bottom-nav">
+                <div class="nav-item" onclick="window.location.href='index.html'">
+                    <img src="img/Homee.png" alt="Home" width="25" height="31">
+                </div>
+                <div class="nav-item active">
+                    <img src="img/Analysis.png" alt="Analysis" width="31" height="30">
+                </div>
+                <div class="nav-item" onclick="window.location.href='transactions.html'">
+                    <img src="img/Transactions.png" alt="Transactions" width="33" height="25">
+                </div>
+                <div class="nav-item">
+                    <img src="img/category_search.png" alt="Category Search" width="27" height="23">
+                </div>
+                <div class="nav-item">
+                    <img src="img/Profile.png" alt="Profile" width="22" height="27">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

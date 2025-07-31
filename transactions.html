@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions - Financial App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/transactions.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@400;700&family=League+Spartan:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Main Background -->
+        <div class="main-bg">
+            <!-- Header Section -->
+            <div class="transaction-header">
+                <div class="back-button" onclick="window.location.href='index.html'">
+                </div>
+                <h1 class="transaction-title">Transaction</h1>
+            </div>
+
+            <!-- Balance Card -->
+            <div class="balance-card-transaction">
+                <div class="balance-info-transaction">
+                    <span class="balance-label-transaction">Total Balance</span>
+                    <span class="balance-amount-transaction">$7,783.00</span>
+                </div>
+            </div>
+
+            <!-- Income and Expense Cards -->
+            <div class="summary-cards">
+                <div class="income-card">
+                    <div class="income-icon">
+                        <img src="img/Income.png" alt="Income" width="25" height="25">
+                    </div>
+                    <div class="income-content">
+                        <span class="income-label">Income</span>
+                        <span class="income-amount">$4,120.00</span>
+                    </div>
+                </div>
+                
+                <div class="expense-card">
+                    <div class="expense-icon">
+                        <img src="img/Expense.png" alt="Expense" width="25" height="25">
+                    </div>
+                    <div class="expense-content">
+                        <span class="expense-label">Expense</span>
+                        <span class="expense-amount">$1,187.40</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- White Frame - Transactions List -->
+            <div class="white-frame-transaction">
+                <!-- Recent Transactions -->
+                <div class="transactions-section">
+                    <div class="transaction-item">
+                        <div class="transaction-icon">
+                            <img src="img/money.png" alt="Salary" width="26" height="23">
+                        </div>
+                        <div class="transaction-details">
+                            <div class="transaction-main">
+                                <span class="transaction-name">Salary</span>
+                                <span class="transaction-category">Monthly</span>
+                                <span class="transaction-amount positive">$4.000,00</span>
+                            </div>
+                            <div class="transaction-time">18:30 - April 30</div>
+                        </div>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="transaction-icon">
+                            <img src="img/money.png" alt="Salary" width="26" height="23">
+                        </div>
+                        <div class="transaction-details">
+                            <div class="transaction-main">
+                                <span class="transaction-name">Salary</span>
+                                <span class="transaction-category">Monthly</span>
+                                <span class="transaction-amount positive">$4.000,00</span>
+                            </div>
+                            <div class="transaction-time">18:39 - March 31</div>
+                        </div>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="transaction-icon">
+                            <img src="img/money.png" alt="Salary" width="26" height="23">
+                        </div>
+                        <div class="transaction-details">
+                            <div class="transaction-main">
+                                <span class="transaction-name">Others</span>
+                                <span class="transaction-category">Payments</span>
+                                <span class="transaction-amount positive">$120,00</span>
+                            </div>
+                            <div class="transaction-time">17:00 - April 24</div>
+                        </div>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="transaction-icon">
+                            <img src="img/money.png" alt="Salary" width="26" height="23">
+                        </div>
+                        <div class="transaction-details">
+                            <div class="transaction-main">
+                                <span class="transaction-name">Others</span>
+                                <span class="transaction-category">Upwork</span>
+                                <span class="transaction-amount positive">$340,00</span>
+                            </div>
+                            <div class="transaction-time">19:30 - March 31</div>
+                        </div>
+                    </div>
+
+                    <div class="transaction-item">
+                        <div class="transaction-icon">
+                            <img src="img/money.png" alt="Salary" width="26" height="23">
+                        </div>
+                        <div class="transaction-details">
+                            <div class="transaction-main">
+                                <span class="transaction-name">Others</span>
+                                <span class="transaction-category">Upwork</span>
+                                <span class="transaction-amount positive">$340,00</span>
+                            </div>
+                            <div class="transaction-time">9:30 - April 12</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <div class="nav-item" onclick="window.location.href='index.html'">
+                <img src="img/Homee.png" alt="Home" width="25" height="31">
+            </div>
+            <div class="nav-item" onclick="window.location.href='budget.html'">
+                <img src="img/Analysis.png" alt="Analysis" width="31" height="30">
+            </div>
+            <div class="nav-item active">
+                <img src="img/Transactions.png" alt="Transactions" width="33" height="25">
+            </div>
+            <div class="nav-item">
+                <img src="img/category_search.png" alt="Category Search" width="27" height="23">
+            </div>
+            <div class="nav-item">
+                <img src="img/Profile.png" alt="Profile" width="22" height="27">
+            </div>
+        </nav>
+    </div>
+
+    <script>
+        // Add interactivity for navigation
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', function() {
+                document.querySelectorAll('.nav-item').forEach(nav => nav.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html> 
